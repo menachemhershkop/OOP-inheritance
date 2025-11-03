@@ -11,5 +11,6 @@ def list_agent():
     agent1.report()
     agent2.report()
     agent3.report()
+    Agent.get_total_agents()
 if __name__=='__main__':
     list_agent()

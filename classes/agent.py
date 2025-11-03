@@ -1,8 +1,10 @@
 class Agent:
     '''Agent code, and clearance level'''
+    total_agents=0
     def __init__(self,code_name:str, clearance_level:int):
         self.code_name=code_name
         self._clearance_level=clearance_level
+        Agent.total_agents+=1
     def report(self):
         print(f'Agent {self.code_name} reporting. Clearance Level: {self._clearance_level}')
     def getter_clearance(self):
@@ -13,3 +15,6 @@ class Agent:
             print("Update is secces")
         else:
             print("the clearance number is incorrect")
+    @staticmethod
+    def get_total_agents():
+        print("Sum of all agents is: ",Agent.total_agents)
