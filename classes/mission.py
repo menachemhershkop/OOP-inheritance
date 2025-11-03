@@ -2,6 +2,7 @@ from classes.agent import Agent
 
 
 class Mission:
+    '''Mission and Mission report'''
     def __init__(self, mission_name:str, target_location:str):
         self.mission_name=mission_name
         self.target_location=target_location
