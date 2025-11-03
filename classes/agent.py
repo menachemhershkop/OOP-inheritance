@@ -8,6 +8,8 @@ class Agent:
     def getter_clearance(self):
         print(self._clearance_level)
     def setter_clearance(self,level):
-        if level>10 and level < 1:
+        if level<10 and level > 1:
             self._clearance_level=level
-        print("the clearance number is incorrect")
+            print("Update is secces")
+        else:
+            print("the clearance number is incorrect")
